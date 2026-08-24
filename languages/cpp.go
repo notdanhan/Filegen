@@ -7,12 +7,12 @@ package languages
 import (
 	"log"
 	"os"
-	"os/exec"
 	"regexp"
 	"strings"
 	"text/template"
 	"time"
 
+	"github.com/danielh2942/filegen/common"
 	"github.com/google/uuid"
 )
 
@@ -70,15 +70,7 @@ func createCppFileFiller(fName string) cppFileFiller {
 	fName = strings.ToLower(fName)
 	fNameUpper := strings.ToUpper(fName)
 
-	// Get the git username for attribution purposes
-	command := exec.Command("git", "config", "user.name")
-	authNameTmp, err := command.Output()
-	// shit happens when you party naked ~Socrates
-	authName := "Thurman Merman"
-	if err == nil {
-		authName = string(authNameTmp)
-	}
-	authName = strings.ReplaceAll(authName, "\n", "")
+	authName := common.GetAuthorName()
 
 	year := time.Now().Year()
 
