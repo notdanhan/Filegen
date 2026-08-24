@@ -12,7 +12,7 @@ import (
 	"text/template"
 	"time"
 
-	"github.com/danielh2942/filegen/common"
+	"github.com/notdanhan/filegen/common"
 	"github.com/google/uuid"
 )
 

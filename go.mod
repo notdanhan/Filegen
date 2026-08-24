@@ -1,4 +1,4 @@
-module github.com/danielh2942/filegen
+module github.com/notdanhan/filegen
 
 go 1.19
 

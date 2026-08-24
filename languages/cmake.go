@@ -10,7 +10,7 @@ import (
 	"strings"
 	"text/template"
 
-	"github.com/danielh2942/filegen/common"
+	"github.com/notdanhan/filegen/common"
 )
 
 type cmakeFileFiller struct {

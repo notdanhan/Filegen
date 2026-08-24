@@ -2,7 +2,7 @@ package main
 
 import (
 	"flag"
-	"github.com/danielh2942/filegen/languages"
+	"github.com/notdanhan/filegen/languages"
 )
 
 func main() {
